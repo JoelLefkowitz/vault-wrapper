@@ -3,7 +3,7 @@ import os
 import re
 
 _title = "Vault Wrapper"
-_project = "vault-wrapper"
+_project = "buildbot-abstract"
 _package = "vault_wrapper"
 
 # Sphinx settings
