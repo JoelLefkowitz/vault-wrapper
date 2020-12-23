@@ -8,7 +8,7 @@ _package = "vault_wrapper"
 
 # Sphinx settings
 project = _title
-version = "0.1.0"
+version = "0.2.0"
 master_doc = "index"
 author = "Joel Lefkowitz"
 copyright = f"{datetime.datetime.now().year}, {author}"
