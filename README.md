@@ -16,7 +16,7 @@ Small hvac wrapper
 To install the package from pypi:
 
 ```bash
-pip install yummy_cereal
+pip install vault_wrapper
 ```
 
 Alternatively, you can clone the repo and build the package locally.
