@@ -18,9 +18,9 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     exec: execs,
-    clean: { packages: ["dist", "build"] },
+    clean: { packages: ["dist", "build", "*.egg-info"] },
   });
-  
+
   grunt.loadNpmTasks("grunt-exec");
   grunt.loadNpmTasks("grunt-force-task");
   grunt.loadNpmTasks("grunt-contrib-clean");
@@ -31,7 +31,7 @@ module.exports = function (grunt) {
       : grunt.registerTask(name, "exec:" + name);
   }
 
-  grunt.registerTask("lint", ["cspell", "pylint", "bandit", "eslint"]);
+  grunt.registerTask("lint", ["cspell", "pylint", "bandit"]);
   grunt.registerTask("format", [
     "presort",
     "black",

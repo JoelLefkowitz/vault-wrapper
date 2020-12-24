@@ -2,6 +2,8 @@ import datetime
 import os
 import re
 
+import pypandoc
+
 _title = "Vault Wrapper"
 _project = "buildbot-abstract"
 _package = "vault_wrapper"
@@ -11,7 +13,10 @@ project = _title
 version = "0.3.0"
 master_doc = "index"
 author = "Joel Lefkowitz"
-copyright = f"{datetime.datetime.now().year}, {author}"
+
+_copyright = f"{datetime.datetime.now().year}, {author}"
+copyright = _copyright  # pylint: disable=redefined-builtin
+
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "venv"]
 
 extensions = [
