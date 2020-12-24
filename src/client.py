@@ -6,9 +6,9 @@ from hvac import Client
 
 class VaultClient(Client):
     def __init__(
-        self, host="127.0.0.1", port=8200, unseal=False, shares=5, threshold=3
+        self, url="http://127.0.0.1:8200", unseal=False, shares=5, threshold=3
     ):
-        super().__init__(f"http://{host}:{port}")
+        super().__init__(url)
         init_data = self.sys.initialize(shares, threshold)
         self.token = init_data["root_token"]
 

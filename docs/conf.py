@@ -5,7 +5,7 @@ import re
 import pypandoc
 
 _title = "Vault Wrapper"
-_project = "buildbot-abstract"
+_project = "vault-wrapper"
 _package = "vault_wrapper"
 
 # Sphinx settings

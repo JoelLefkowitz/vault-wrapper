@@ -51,7 +51,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ### Naming converntion
 
 - Package name: vault_wrapper
-- Project/Repository name: buildbot-abstract
+- Project/Repository name: vault-wrapper
 
 ### Acknowledgments
 
@@ -59,12 +59,12 @@ None yet!
 
 <!--- Table links --->
 
-[license]: https://img.shields.io/github/license/joellefkowitz/buildbot-abstract
-[release]: https://img.shields.io/github/v/tag/joellefkowitz/buildbot-abstract
-[pypi_downloads]: https://img.shields.io/pypi/dw/buildbot-abstract
-[pypi]: https://img.shields.io/pypi/v/buildbot-abstract "PyPi"
-[pypi_link]: https://pypi.org/project/buildbot-abstract
-[issues]: https://img.shields.io/github/issues/joellefkowitz/buildbot-abstract "Issues"
-[issues_link]: https://github.com/JoelLefkowitz/buildbot-abstract/issues
-[pulls]: https://img.shields.io/github/issues-pr/joellefkowitz/buildbot-abstract "Pull requests"
-[pulls_link]: https://github.com/JoelLefkowitz/buildbot-abstract/pulls
+[license]: https://img.shields.io/github/license/joellefkowitz/vault-wrapper
+[release]: https://img.shields.io/github/v/tag/joellefkowitz/vault-wrapper
+[pypi_downloads]: https://img.shields.io/pypi/dw/vault-wrapper
+[pypi]: https://img.shields.io/pypi/v/vault-wrapper "PyPi"
+[pypi_link]: https://pypi.org/project/vault-wrapper
+[issues]: https://img.shields.io/github/issues/joellefkowitz/vault-wrapper "Issues"
+[issues_link]: https://github.com/JoelLefkowitz/vault-wrapper/issues
+[pulls]: https://img.shields.io/github/issues-pr/joellefkowitz/vault-wrapper "Pull requests"
+[pulls_link]: https://github.com/JoelLefkowitz/vault-wrapper/pulls
