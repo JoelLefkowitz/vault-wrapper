@@ -1,4 +1,5 @@
 import json
+import logging
 import requests
 from pathlib import Path
 
