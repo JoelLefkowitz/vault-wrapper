@@ -1,7 +1,14 @@
 import json
+import requests
 from pathlib import Path
 
 from hvac import Client
+
+from retry import retry
+
+logger = logging.getLogger(__name__)
+exceptions = (FileNotFoundError, requests.exceptions.ConnectionError)
+soft_retry = retry(exceptions, tries=10, delay=1, backoff=2, logger=logger)
 
 
 class VaultClient(Client):
@@ -14,6 +21,11 @@ class VaultClient(Client):
 
         if unseal:
             self.sys.submit_unseal_keys(init_data["keys"])
+
+    @classmethod
+    @soft_retry
+    def try_connect_client(cls, *args, **kwargs):
+        return cls(*args, **kwargs)
 
     def enable_kv_engines(self, paths):
         for path in paths:
