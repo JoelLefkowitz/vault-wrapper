@@ -11,7 +11,11 @@ class VaultPolicy:
                     [
                         "".join(['path "', path, '/*" {']),
                         "".join(
-                            [" " * 4, "capabilities = ", str(cap).replace("'", '"')]
+                            [
+                                " " * 4,
+                                "capabilities = ",
+                                str(cap).replace("'", '"'),
+                            ]
                         ),
                         "}",
                     ]

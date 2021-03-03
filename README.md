@@ -1,6 +1,6 @@
 # Vault wrapper
 
-Hvac wrapper to automate enabling kv engines
+Hvac wrapper to automate enabling kv engines.
 
 ## Status
 

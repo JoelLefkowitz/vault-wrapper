@@ -1,20 +1,25 @@
 import json
 import logging
-import requests
 from pathlib import Path
 
+import requests
 from hvac import Client
-
 from retry import retry
 
 logger = logging.getLogger(__name__)
 exceptions = (FileNotFoundError, requests.exceptions.ConnectionError)
-soft_retry = retry(exceptions, tries=10, delay=1, backoff=2, logger=logger)
+soft_retry = retry(
+    exceptions, tries=10, delay=1, backoff=2, logger=logger
+)
 
 
 class VaultClient(Client):
     def __init__(
-        self, url="http://127.0.0.1:8200", unseal=False, shares=5, threshold=3
+        self,
+        url="http://127.0.0.1:8200",
+        unseal=False,
+        shares=5,
+        threshold=3,
     ):
         super().__init__(url)
         init_data = self.sys.initialize(shares, threshold)
@@ -44,7 +49,9 @@ class VaultClient(Client):
 
     def write_tokens(self, names):
         for name in names:
-            Path(f"/tokens/{name}/").mkdir(parents=True, exist_ok=True)
+            Path(f"/tokens/{name}/").mkdir(
+                parents=True, exist_ok=True
+            )
             with open(f"/tokens/{name}/token.json", "w") as stream:
                 token = self.create_token(policies=[name], lease="1h")
                 stream.write(json.dumps({"token": token}))
