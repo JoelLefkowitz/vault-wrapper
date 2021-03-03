@@ -1,0 +1,7 @@
+project: vault-wrapper
+version: 0.3.4
+author: Joel Lefkowitz
+verbose_name: Vault wrapper
+html_title: Vault wrapper
+github_url: JoelLefkowitz/vault-wrapper
+apidoc_module_dir: vault_wrapper

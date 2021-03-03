@@ -1,33 +1,79 @@
 # Vault wrapper
 
-Small hvac wrapper
+Hvac wrapper to automate enabling kv engines
 
 ## Status
 
-| Source     | Shields                                                        |
-| ---------- | -------------------------------------------------------------- |
-| Project    | ![license][license] ![release][release]                        |
-| Publishers | [![pypi][pypi]][pypi_link]                                     |
-| Downloads  | ![pypi_downloads][pypi_downloads]                              |
-| Raised     | [![issues][issues]][issues_link] [![pulls][pulls]][pulls_link] |
+| Source     | Shields                                                                                                            |
+| ---------- | ------------------------------------------------------------------------------------------------------------------ |
+| Project    | ![release][release_shield] ![license][license_shield] ![dependents][dependents_shield]                             |
+| Health     | ![travis][travis_shield] ![codacy][codacy_shield] ![coverage][coverage_shield] ![readthedocs][readthedocs_shield]  |
+| Repository | ![issues][issues_shield] ![pulls][pulls_shield]                                                                    |
+| Publishers | ![pypi][pypi_shield] ![python_versions][python_versions_shield] ![pypi_downloads][pypi_downloads_shield]           |
+| Activity   | ![contributors][contributors_shield] ![monthly_commits][monthly_commits_shield] ![last_commit][last_commit_shield] |
 
-### Installing
-
-To install the package from pypi:
+## Installation
 
 ```bash
 pip install vault_wrapper
 ```
 
-Alternatively, you can clone the repo and build the package locally.
+## Tests
 
-### Contributing
+To run unit tests:
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
+```bash
+grunt tests:unit
+```
 
-### Versioning
+To generate a coverage report:
 
-[SemVer](http://semver.org/) is used for versioning. For a list of versions available, see the tags on this repository.
+```bash
+grunt tests:coverage
+```
+
+## Documentation
+
+This repository's documentation is hosted on [readthedocs][readthedocs].
+
+To generate the sphinx configuration:
+
+```bash
+grunt docs:generate
+```
+
+Then build the documentation:
+
+```bash
+grunt docs:build
+```
+
+## Tooling
+
+To run linters:
+
+```bash
+grunt lint
+```
+
+To run formatters:
+
+```bash
+grunt format
+```
+
+Before commiting new code:
+
+```bash
+grunt precommit
+```
+
+This will run linters, formaters, generate a test coverage report and the sphinx configuration.
+
+## Versioning
+
+This repository adheres to semantic versioning standards.
+For more inforamtion on semantic versioning visit [SemVer][semver].
 
 Bump2version is used to version and tag changes.
 For example:
@@ -36,35 +82,69 @@ For example:
 bump2version patch
 ```
 
-Releases are made on every major change.
+## Changelog
 
-### Author
+Please read this repository's [CHANGELOG](CHANGELOG.md) for details on changes that have been made.
 
-- **Joel Lefkowitz** - _Initial work_ - [Joel Lefkowitz](https://github.com/JoelLefkowitz)
+## Contributing
 
-See also the list of contributors who participated in this project.
+Please read this repository's guidelines on [CONTRIBUTING](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-### License
+## Contributors
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+- **Joel Lefkowitz** - _Initial work_ - [Joel Lefkowitz][joellefkowitz]
 
-### Naming converntion
+[![Buy Me A Coffee][coffee_button]][coffee]
 
-- Package name: vault_wrapper
-- Project/Repository name: vault-wrapper
+## Remarks
 
-### Acknowledgments
+Lots of love to the open source community!
 
-None yet!
+![Be kind][be_kind]
 
-<!--- Table links --->
+<!-- Github links -->
 
-[license]: https://img.shields.io/github/license/joellefkowitz/vault-wrapper
-[release]: https://img.shields.io/github/v/tag/joellefkowitz/vault-wrapper
-[pypi_downloads]: https://img.shields.io/pypi/dw/vault-wrapper
-[pypi]: https://img.shields.io/pypi/v/vault-wrapper "PyPi"
-[pypi_link]: https://pypi.org/project/vault-wrapper
-[issues]: https://img.shields.io/github/issues/joellefkowitz/vault-wrapper "Issues"
-[issues_link]: https://github.com/JoelLefkowitz/vault-wrapper/issues
-[pulls]: https://img.shields.io/github/issues-pr/joellefkowitz/vault-wrapper "Pull requests"
-[pulls_link]: https://github.com/JoelLefkowitz/vault-wrapper/pulls
+[pulls]: https://github.com/JoelLefkowitz/vault-wrapper/pulls
+[issues]: https://github.com/JoelLefkowitz/vault-wrapper/issues
+
+<!-- External links -->
+
+[readthedocs]: https://vault-wrapper.readthedocs.io/en/latest/
+[semver]: http://semver.org/
+[coffee]: https://www.buymeacoffee.com/joellefkowitz
+[coffee_button]: https://cdn.buymeacoffee.com/buttons/default-blue.png
+[be_kind]: https://media.giphy.com/media/osAcIGTSyeovPq6Xph/giphy.gif
+
+<!-- Acknowledgments -->
+
+[joellefkowitz]: https://github.com/JoelLefkowitz
+
+<!-- Project shields -->
+
+[release_shield]: https://img.shields.io/github/v/tag/joellefkowitz/vault-wrapper
+[license_shield]: https://img.shields.io/github/license/joellefkowitz/vault-wrapper
+[dependents_shield]: https://img.shields.io/librariesio/dependent-repos/pypi/vault_wrapper
+
+<!-- Health shields -->
+
+[travis_shield]: https://img.shields.io/travis/joellefkowitz/vault-wrapper
+[codacy_shield]: https://img.shields.io/codacy/coverage/vault-wrapper
+[coverage_shield]: https://img.shields.io/codacy/grade/vault-wrapper
+[readthedocs_shield]: https://img.shields.io/readthedocs/vault-wrapper
+
+<!-- Repository shields -->
+
+[issues_shield]: https://img.shields.io/github/issues/joellefkowitz/vault-wrapper
+[pulls_shield]: https://img.shields.io/github/issues-pr/joellefkowitz/vault-wrapper
+
+<!-- Publishers shields -->
+
+[pypi_shield]: https://img.shields.io/pypi/v/vault_wrapper
+[python_versions_shield]: https://img.shields.io/pypi/pyversions/vault_wrapper
+[pypi_downloads_shield]: https://img.shields.io/pypi/dw/vault_wrapper
+
+<!-- Activity shields -->
+
+[contributors_shield]: https://img.shields.io/github/contributors/joellefkowitz/vault-wrapper
+[monthly_commits_shield]: https://img.shields.io/github/commit-activity/m/joellefkowitz/vault-wrapper
+[last_commit_shield]: https://img.shields.io/github/last-commit/joellefkowitz/vault-wrapper

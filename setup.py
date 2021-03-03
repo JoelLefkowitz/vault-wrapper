@@ -4,27 +4,28 @@ if __name__ == "__main__":
     setup(
         packages=["vault_wrapper"],
         package_dir={"vault_wrapper": "src"},
-        install_requires=[
-            "hvac", "retry", "requests"
-        ],
+        install_requires=["hvac", "retry", "requests"],
         extras_require={
-            "dev": ["black", "autoflake", "isort", "mypy", "wheel"],
-            "docs": [
-                "sphinx",
-                "pyimport",
-                "pypandoc",
-                "sphinxcontrib.apidoc",
-                "sphinxcontrib.pandoc_markdown",
-                "sphinx-autodoc-annotation",
-                "yummy_sphinx_theme",
-            ],
             "tests": [
-                "pytest",
+                "pytest-bdd",
                 "pytest-cov",
                 "pytest-html",
                 "pytest-sugar",
-                "pytest-bdd",
                 "pytest-watch",
+                "pytest",
+                "tox",
+            ],
+            "tools": [
+                "autoflake",
+                "bandit",
+                "black",
+                "bump2version",
+                "isort",
+                "mypy",
+                "pylint",
+                "quickdocs",
+                "twine",
+                "wheel",
             ],
         },
     )
