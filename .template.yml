@@ -1,0 +1,55 @@
+output_dir: .
+
+clear_top_level: true
+logical_grouping: true
+
+collections:
+  - common
+  - python
+
+loader_paths:
+  - docs
+
+render_context:
+  project:
+    project_name: vault-wrapper
+    version: 0.3.4
+
+    verbose_name: Vault wrapper
+    description: Hvac wrapper to automate enabling kv engines.
+
+    repository: https://github.com/JoelLefkowitz/vault-wrapper
+    codacy_id: 65b8e7e94f344dbdad8b20b0fc4ae7a9
+
+    inserts:
+      - usage.md
+
+  author:
+    author: Joel Lefkowitz
+    author_email: joellefkowitz@hotmail.com
+    author_github_handle: joellefkowitz
+
+  package:
+    is_pypi_package: true
+    package_name: vault-wrapper
+
+    install_requires:
+      - dataclasses
+
+  portfolio:
+    is_portfolio: true
+    status_level: 2
+
+    languages:
+      - Python
+
+    frameworks:
+      - HVAC
+      - Vault
+
+    paradigms:
+      - Object oriented programming
+
+  public_keys:
+    travis_pypi: p35YVwrOFlFRB+urnuxsojvvJ0GTzSMNux2XL8OQEMUy2QUSdm9rlpLO/gpEYd4zjeb9fBbLekl0HVDU7UbJARMzPP2JEpSaQj2Mdj6x9gNCKPJ6uoQxYfX1O/xt5w1RpPLTmtj92k1348lfkr7IEhVsBuXjXcSF7vxv/3Q/dZIMkWFm2F49283QnnZXE8oiS6vWAkfM9/5BhbxgNiKjxdPkVpm0E/lOGrnVDZJFBhDQYd2kt8KYuq0puX9euwsE9eogitqyORi/L8gehD+GoKFKdNAMExqK+maxghPyL2llZrWalls7MCKeEVf6R+UMHCSFaY18n34Dax3dZwL+FhsYuOuYFvewfsLE/4Bye0NzVpu3eZNsLamqzDTayNfgn3/2CqmpTUNlnToLvH7+OC5sDTSSjT7dPGKhd30XDiIpe1WMDPjH+z4CC1cWm2uAhTyd32obHVG3VQpjZgwbpVCjWS3oQe1Dw1MOMqi6sWzLzZ1JS9PmBpUIktrffJr8APK3nHcbA0JiBjxjJin8G1YQigAqFmfUaoRSKsS1AiI8jfYBpCV3cUOHe8aDJNudxvZ0LQSab8VOdSDAVaz9UXs4FCZUy5LoeFdyV4YT2V1ayPPvKWFyN7nPziWIwdT72QgikYldSz7PsPND2L0ZQR9ABL3FmrgqDALZVkD3Qhc=
+    travis_codacy: rNjiLuLUIBXB/0juewRb7INwYkr7L8yGfPYJULM7HVSsFAC4cFCiYzglOIvI/VzjFzfcYnjU0rUwqwnsUxL/MWKKL4aUeOA20h7u0OR5op23k4N/qStR20DOPYtRDDy+MXJMbxuufrGtuzZANWo4HzuIo4qwOh2wZEttupG1zIWF6LeD9vafgHwjjRcoJX4Vgve3PYjFrOT+cp++Tud2QrMfdMHLAok//7zwKU3ydwCGhWPW784UthqAIPnSs7V8PqNIClwzH+NGrCUv2TZbDfmXxJiBlHtQw/oe4U853A0aldSrC4S9R/j9D99d1BiWcGLilPvFzMkdlR0ARQtpMMGyGZii9BGl73rlmikcaWVMAuYvUNMsU15g4+wxY4qLsMnV+hsjTyi8aob08NDpE8gkdXYafnyRIapCGjd9nktK4b3qsyUA1aG2cG48yhSdz9yhIl271HffKXTQHiwEESO4R1g0WiknkWUTIZHdzPEi10a+kl0iL3WWaOdyNRkxfnQFquSd9mY3r0zJc5WRmwOFCWIUx7eNeS+0w0ypTMib7H6QLowHbi3j0cY0utkLrLs1VRcL49cfI1ZoXmOKzucUDxsKw5aXd36jAMqTToEg6ZbPSqrNhvDrPMzXOrfJRwEcwy16Iqc+u6bLn9DJBP/gfreC6mpeXJ1V7BPaoxY=
