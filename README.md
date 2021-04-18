@@ -4,32 +4,28 @@ Hvac wrapper to automate enabling kv engines.
 
 ## Status
 
-| Source     | Shields                                                                                                            |
-| ---------- | ------------------------------------------------------------------------------------------------------------------ |
-| Project    | ![release][release_shield] ![license][license_shield] ![dependents][dependents_shield]                             |
-| Health     | ![travis][travis_shield] ![codacy][codacy_shield] ![coverage][coverage_shield] ![readthedocs][readthedocs_shield]  |
-| Repository | ![issues][issues_shield] ![pulls][pulls_shield]                                                                    |
-| Publishers | ![pypi][pypi_shield] ![python_versions][python_versions_shield] ![pypi_downloads][pypi_downloads_shield]           |
-| Activity   | ![contributors][contributors_shield] ![monthly_commits][monthly_commits_shield] ![last_commit][last_commit_shield] |
+| Source     | Shields                                                                                                                         |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Project    | ![release][release_shield] ![license][license_shield]  ![lines][lines_shield] ![languages][languages_shield]                    |
+| Health     | ![codacy][codacy_shield] ![readthedocs][readthedocs_shield] ![travis][travis_shield] ![codacy_coverage][codacy_coverage_shield] |
+| Repository | ![issues][issues_shield] ![issues_closed][issues_closed_shield] ![pulls][pulls_shield] ![pulls_closed][pulls_closed_shield]     |
+| Publishers | ![pypi][pypi_shield] ![python_versions][python_versions_shield] ![pypi_downloads][pypi_downloads_shield]                        |
+| Activity   | ![contributors][contributors_shield] ![monthly_commits][monthly_commits_shield] ![last_commit][last_commit_shield]              |
 
-## Installation
+## Installing
 
 ```bash
-pip install vault_wrapper
+pip install vault-wrapper
 ```
+
+## Usage
 
 ## Tests
 
-To run unit tests:
+To run unit tests and generate a coverage report:
 
 ```bash
 grunt tests:unit
-```
-
-To generate a coverage report:
-
-```bash
-grunt tests:coverage
 ```
 
 ## Documentation
@@ -62,18 +58,22 @@ To run formatters:
 grunt format
 ```
 
-Before commiting new code:
+Before committing new code:
 
 ```bash
 grunt precommit
 ```
 
-This will run linters, formaters, generate a test coverage report and the sphinx configuration.
+This will run linters, formatters, tests, generate a test coverage report and the sphinx configuration.
+
+## Continuous integration
+
+This repository uses Travis CI to build and test each commit. Formatting tasks and writing/generating documentation must be done before committing new code.
 
 ## Versioning
 
 This repository adheres to semantic versioning standards.
-For more inforamtion on semantic versioning visit [SemVer][semver].
+For more information on semantic versioning visit [SemVer][semver].
 
 Bump2version is used to version and tag changes.
 For example:
@@ -92,7 +92,7 @@ Please read this repository's guidelines on [CONTRIBUTING](CONTRIBUTING.md) for 
 
 ## Contributors
 
-- **Joel Lefkowitz** - _Initial work_ - [Joel Lefkowitz][joellefkowitz]
+- **Joel Lefkowitz** - _Initial work_ - [Joel Lefkowitz][author]
 
 [![Buy Me A Coffee][coffee_button]][coffee]
 
@@ -102,49 +102,42 @@ Lots of love to the open source community!
 
 ![Be kind][be_kind]
 
-<!-- Github links -->
-
-[pulls]: https://github.com/JoelLefkowitz/vault-wrapper/pulls
-[issues]: https://github.com/JoelLefkowitz/vault-wrapper/issues
+<!-- Public links -->
+[semver]: http://semver.org/
 
 <!-- External links -->
-
 [readthedocs]: https://vault-wrapper.readthedocs.io/en/latest/
-[semver]: http://semver.org/
 [coffee]: https://www.buymeacoffee.com/joellefkowitz
 [coffee_button]: https://cdn.buymeacoffee.com/buttons/default-blue.png
 [be_kind]: https://media.giphy.com/media/osAcIGTSyeovPq6Xph/giphy.gif
 
 <!-- Acknowledgments -->
-
-[joellefkowitz]: https://github.com/JoelLefkowitz
+[author]: https://github.com/joellefkowitz
 
 <!-- Project shields -->
-
 [release_shield]: https://img.shields.io/github/v/tag/joellefkowitz/vault-wrapper
 [license_shield]: https://img.shields.io/github/license/joellefkowitz/vault-wrapper
-[dependents_shield]: https://img.shields.io/librariesio/dependent-repos/pypi/vault_wrapper
+[lines_shield]: https://img.shields.io/tokei/lines/github/joellefkowitz/vault-wrapper
+[languages_shield]: https://img.shields.io/github/languages/count/joellefkowitz/vault-wrapper
 
 <!-- Health shields -->
-
-[travis_shield]: https://img.shields.io/travis/joellefkowitz/vault-wrapper
-[codacy_shield]: https://img.shields.io/codacy/coverage/vault-wrapper
-[coverage_shield]: https://img.shields.io/codacy/grade/vault-wrapper
+[codacy_shield]: https://img.shields.io/codacy/grade/65b8e7e94f344dbdad8b20b0fc4ae7a9
 [readthedocs_shield]: https://img.shields.io/readthedocs/vault-wrapper
+[travis_shield]: https://img.shields.io/travis/com/joellefkowitz/vault-wrapper
+[codacy_coverage_shield]: https://img.shields.io/codacy/coverage/65b8e7e94f344dbdad8b20b0fc4ae7a9
 
 <!-- Repository shields -->
-
 [issues_shield]: https://img.shields.io/github/issues/joellefkowitz/vault-wrapper
+[issues_closed_shield]: https://img.shields.io/github/issues-closed/joellefkowitz/vault-wrapper
 [pulls_shield]: https://img.shields.io/github/issues-pr/joellefkowitz/vault-wrapper
+[pulls_closed_shield]: https://img.shields.io/github/issues-pr-closed/joellefkowitz/vault-wrapper
 
 <!-- Publishers shields -->
-
-[pypi_shield]: https://img.shields.io/pypi/v/vault_wrapper
-[python_versions_shield]: https://img.shields.io/pypi/pyversions/vault_wrapper
-[pypi_downloads_shield]: https://img.shields.io/pypi/dw/vault_wrapper
+[pypi_shield]: https://img.shields.io/pypi/v/vault-wrapper
+[python_versions_shield]: https://img.shields.io/pypi/pyversions/vault-wrapper
+[pypi_downloads_shield]: https://img.shields.io/pypi/dw/vault-wrapper
 
 <!-- Activity shields -->
-
 [contributors_shield]: https://img.shields.io/github/contributors/joellefkowitz/vault-wrapper
 [monthly_commits_shield]: https://img.shields.io/github/commit-activity/m/joellefkowitz/vault-wrapper
 [last_commit_shield]: https://img.shields.io/github/last-commit/joellefkowitz/vault-wrapper
